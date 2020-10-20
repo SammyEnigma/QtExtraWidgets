@@ -1,5 +1,5 @@
-#ifndef _HORIZONTAL_LINE
-#define _HORIZONTAL_LINE
+#ifndef HORIZONTAL_LINE
+#define HORIZONTAL_LINE
 
 #include <QtCore>
 #include <QWidget>
@@ -15,10 +15,10 @@ class HorizontalLine : public QWidget
     Q_OBJECT
 public:
     HorizontalLine(int sz = -1, QWidget* ptr = nullptr);
-    virtual ~HorizontalLine();
+    virtual ~HorizontalLine() override;
     void SetWidth(int sz);
 protected:
-    QSize sizeHint() const;
+    QSize sizeHint() const override;
     void paintEvent(QPaintEvent *event) override;
 private:
     int widgetWidth;

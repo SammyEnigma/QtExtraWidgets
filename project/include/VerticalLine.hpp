@@ -1,5 +1,5 @@
-#ifndef _VERTICAL_LINE
-#define _VERTICAL_LINE
+#ifndef VERTICAL_LINE
+#define VERTICAL_LINE
 
 #include <QtCore>
 #include <QWidget>
@@ -15,10 +15,10 @@ class VerticalLine : public QWidget
     Q_OBJECT
 public:
     VerticalLine(int sz = -1, QWidget* ptr = nullptr);
-    virtual ~VerticalLine();
+    virtual ~VerticalLine() override;
     void SetHeight(int sz);
 protected:
-    QSize sizeHint() const;
+    QSize sizeHint() const override;
     void paintEvent(QPaintEvent *event) override;
 private:
     int widgetHeight;

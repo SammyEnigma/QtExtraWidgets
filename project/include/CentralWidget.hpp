@@ -1,5 +1,5 @@
-#ifndef _CENTRAL_WIDGET
-#define _CENTRAL_WIDGET
+#ifndef CENTRAL_WIDGET
+#define CENTRAL_WIDGET
 
 #include <QtCore>
 #include <QWidget>
@@ -14,7 +14,7 @@ class CentralWidget : public QWidget
 {
     Q_OBJECT
 public:
-    CentralWidget(QWidget *parent = nullptr);
+    explicit CentralWidget(QWidget *parent = nullptr);
     ~CentralWidget();
     void addWidget(QWidget *widget);
 private:

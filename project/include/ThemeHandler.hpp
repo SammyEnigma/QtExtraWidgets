@@ -1,5 +1,5 @@
-#ifndef _THEME_HANDLER
-#define _THEME_HANDLER
+#ifndef THEME_HANDLER
+#define THEME_HANDLER
 
 #include <QWidget>
 #include <QLabel>

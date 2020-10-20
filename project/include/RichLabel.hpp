@@ -1,5 +1,5 @@
-#ifndef _RICH_LABEL
-#define _RICH_LABEL
+#ifndef RICH_LABEL
+#define RICH_LABEL
 
 #include <QtCore>
 #include <QWidget>
@@ -14,9 +14,9 @@ class RichLabel : public QWidget
 {
     Q_OBJECT
 public:
-    RichLabel(QWidget* ptr = nullptr);
+    explicit RichLabel(QWidget* ptr = nullptr);
     RichLabel(QString txt, QString fname, QWidget* ptr = nullptr);
-    virtual ~RichLabel();
+    virtual ~RichLabel() override;
     void setText(QString txt);
     void setImageFile(QString fname);
     void setUnderline(bool fl = true);
@@ -27,7 +27,7 @@ signals:
     void clicked();
 
 protected:
-    QSize sizeHint() const;
+    QSize sizeHint() const override;
     void paintEvent(QPaintEvent *event) override;
     void mousePressEvent(QMouseEvent *event) override;
     void mouseReleaseEvent(QMouseEvent *event) override;

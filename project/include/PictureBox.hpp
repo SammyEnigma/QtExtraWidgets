@@ -1,5 +1,5 @@
-#ifndef _PICTURE_BOX
-#define _PICTURE_BOX
+#ifndef PICTURE_BOX
+#define PICTURE_BOX
 
 #include <QLabel>
 
@@ -7,7 +7,7 @@ class PictureBox : public QLabel
 {
 Q_OBJECT
 public:
-    explicit PictureBox( const QString& text="", QWidget* parent=0 );
+    explicit PictureBox( const QString& text="", QWidget* parent= nullptr);
     ~PictureBox();
 signals:
     void clicked();

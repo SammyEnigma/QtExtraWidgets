@@ -1,5 +1,5 @@
-#ifndef _INDICATOR_BAR
-#define _INDICATOR_BAR
+#ifndef INDICATOR_BAR
+#define INDICATOR_BAR
 
 #include <QtCore>
 #include <QWidget>

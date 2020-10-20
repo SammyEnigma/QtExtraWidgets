@@ -10,15 +10,15 @@ message("WARNING: On Windows, please set the Qt5_DIR to the Qt5 CMake configurat
 set(Qt5_DIR C:/Qt/5.13.1/msvc2017_64/lib/cmake/Qt5)
 endif()
 
-include_directories(./headers)
+include_directories(./include)
 
 find_package(Qt5 COMPONENTS Core Widgets Gui REQUIRED)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-set(PROJECT_SOURCE_DIR ./sources)
-set(PROJECT_HEADER_DIR ./headers)
+set(PROJECT_SOURCE_DIR ./src)
+set(PROJECT_HEADER_DIR ./include)
 
 set(project_sources
 ${PROJECT_SOURCE_DIR}/ActiveLabel.cpp 

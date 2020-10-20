@@ -1,5 +1,5 @@
-#ifndef _RICH_DATA_LIST
-#define _RICH_DATA_LIST
+#ifndef RICH_DATA_LIST
+#define RICH_DATA_LIST
 
 #include <QtCore>
 #include <QWidget>
@@ -26,7 +26,7 @@ class RichDataList : public QListWidget
 {
     Q_OBJECT
 public:
-	RichDataList(bool large);
+    explicit RichDataList(bool large);
     virtual ~RichDataList();
 };
 

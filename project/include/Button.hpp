@@ -1,5 +1,5 @@
-#ifndef _BUTTON_
-#define _BUTTON_
+#ifndef BUTTON
+#define BUTTON
 
 #include <QtCore>
 #include <QWidget>
@@ -15,9 +15,9 @@ class Button : public QWidget
 {
     Q_OBJECT
 public:
-    Button(QWidget* ptr = nullptr);
+    explicit Button(QWidget* ptr = nullptr);
     Button(QString txt, QString fname, QWidget* ptr = nullptr);
-    virtual ~Button();
+    virtual ~Button() override;
     void setText(QString txt);
     void setImageFile(QString fname);
 
@@ -25,7 +25,7 @@ signals:
     void clicked();
 
 protected:
-    QSize sizeHint() const;
+    QSize sizeHint() const override;
     void paintEvent(QPaintEvent *event) override;
     void mousePressEvent(QMouseEvent *event) override;
     void mouseReleaseEvent(QMouseEvent *event) override;

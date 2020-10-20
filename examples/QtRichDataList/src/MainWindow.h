@@ -1,5 +1,5 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#ifndef MAINWINDOW
+#define MAINWINDOW
 
 #include <QtWidgets>
 #include <QMainWindow>
@@ -10,7 +10,7 @@ class MainWindow : public QMainWindow
 {
 	Q_OBJECT
 public:
-	MainWindow(QWidget* parent = 0);
+    explicit MainWindow(QWidget* parent = nullptr);
 	~MainWindow();
 private:
 	QSplitter splitter;

@@ -1,5 +1,5 @@
-#ifndef _ACTIVE_LABEL
-#define _ACTIVE_LABEL
+#ifndef ACTIVE_LABEL
+#define ACTIVE_LABEL
 
 #include <QtCore>
 #include <QWidget>
@@ -14,7 +14,7 @@ class ActiveLabel : public QLabel
 {
     Q_OBJECT
 public:
-    explicit ActiveLabel( const QString& text="", QWidget* parent=0 );
+    explicit ActiveLabel( const QString& text="", QWidget* parent= nullptr );
     ~ActiveLabel();
 signals:
     void clicked();

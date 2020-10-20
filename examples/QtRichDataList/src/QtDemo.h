@@ -1,5 +1,5 @@
-#ifndef _QT_DEMO
-#define _QT_DEMO
+#ifndef QT_DEMO
+#define QT_DEMO
 
 #include <QtCore>
 #include <QApplication>

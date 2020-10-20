@@ -1,5 +1,5 @@
-#ifndef _INDICATOR_CIRCULAR
-#define _INDICATOR_CIRCULAR
+#ifndef INDICATOR_CIRCULAR
+#define INDICATOR_CIRCULAR
 
 #include <QtCore>
 #include <QWidget>
